@@ -1,0 +1,43 @@
+# --- OS generated files ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- IDE files ---
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Environment files ---
+.env
+.env.*
+*.local
+
+# --- Java / Maven build outputs ---
+target/
+**/target/
+out/
+**/out/
+*.class
+*.jar
+*.war
+*.ear
+
+# --- Maven wrapper cache / temp ---
+.mvn/wrapper/maven-wrapper.jar
+
+# --- Node.js (if present in subprojects) ---
+node_modules/
+dist/
+build/
+.npm/
+.pnpm-store/
+yarn-error.log*
+yarn-debug.log*
+npm-debug.log*
