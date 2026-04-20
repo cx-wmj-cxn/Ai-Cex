@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/cex-account-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-account-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-auth-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-auth-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-clearing-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-clearing-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-data-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-data-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-gateway-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-gateway-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-market-data-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-market-data-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-ops-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-ops-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-risk-compliance-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-risk-compliance-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-trading-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-trading-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-wallet-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cex-wallet-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

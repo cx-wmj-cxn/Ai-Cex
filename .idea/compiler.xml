@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cex-account-service" />
+        <module name="cex-clearing-service" />
+        <module name="cex-ops-service" />
+        <module name="cex-market-data-service" />
+        <module name="cex-gateway-service" />
+        <module name="cex-risk-compliance-service" />
+        <module name="cex-wallet-service" />
+        <module name="cex-common" />
+        <module name="cex-data-service" />
+        <module name="cex-auth-service" />
+        <module name="cex-trading-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
