@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MarketDataServiceApplication {
 
     public static void main(String[] args) {
+        // 统一扫描 com.aicex，便于公共组件复用与服务治理接入。
         SpringApplication.run(MarketDataServiceApplication.class, args);
     }
 }

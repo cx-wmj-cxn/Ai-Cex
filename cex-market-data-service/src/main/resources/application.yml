@@ -1,3 +1,46 @@
+server:
+  port: 8087
+
+spring:
+  application:
+    name: cex-market-data-service
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 1000ms
+  kafka:
+    bootstrap-servers: localhost:9092
+    listener:
+      # record 模式降低批量提交引发的重复消费窗口。
+      ack-mode: record
+      # 多并发消费者提升吞吐，需与分区数匹配。
+      concurrency: 3
+    consumer:
+      auto-offset-reset: latest
+      max-poll-records: 500
+      fetch-min-size: 1
+      properties:
+        spring.json.trusted.packages: com.aicex.marketdata.domain
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # 暴露关键观测指标，便于高可用运维。
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: always
+
+market:
+  ingest:
+    kafka:
+      enabled: true
+      topic: market.events
+      group-id: market-data-service
 spring:
   profiles:
     active: dev
