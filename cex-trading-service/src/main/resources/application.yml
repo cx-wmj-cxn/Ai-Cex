@@ -3,6 +3,15 @@ spring:
     active: dev
   application:
     name: cex-trading-service
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    listener:
+      ack-mode: record
+    consumer:
+      auto-offset-reset: latest
+      properties:
+        spring.json.trusted.packages: com.aicex.trading.domain
+        spring.json.value.default.type: com.aicex.trading.domain.RiskTriggerEvent
   cloud:
     nacos:
       discovery:
@@ -34,3 +43,12 @@ springdoc:
 logging:
   pattern:
     level: "%5p [traceId:%X{traceId}]"
+
+trading:
+  risk-trigger:
+    kafka:
+      enabled: false
+      topic: risk.triggers
+      group-id: trading-risk-trigger
+    execution:
+      idempotency-window-seconds: 600

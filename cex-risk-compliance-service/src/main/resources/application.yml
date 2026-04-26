@@ -3,6 +3,13 @@ spring:
     active: dev
   application:
     name: cex-risk-compliance-service
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.add.type.headers: false
   cloud:
     nacos:
       discovery:
@@ -34,3 +41,13 @@ springdoc:
 logging:
   pattern:
     level: "%5p [traceId:%X{traceId}]"
+
+risk:
+  monitor:
+    interval-ms: 1000
+    liquidation-consecutive-hits: 2
+    conditional-consecutive-hits: 1
+    liquidation-fee-buffer-rate: 0.001
+    kafka:
+      enabled: false
+      topic: risk.triggers
